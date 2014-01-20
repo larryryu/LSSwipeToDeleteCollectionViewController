@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Lukman Sanusi. All rights reserved.
 //
 
-#import "LSSwipeToDeleteCollectionViewController.h"
+#import <LSSwipeToDeleteCollectionViewController.h>
 
 @interface LSTopCollectionViewController : LSSwipeToDeleteCollectionViewController
 + (UICollectionViewLayout *) defaultCollectionViewLayout;

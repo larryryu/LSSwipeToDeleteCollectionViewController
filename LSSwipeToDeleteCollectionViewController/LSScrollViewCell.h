@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Lukman Sanusi. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 
 typedef NS_OPTIONS(NSInteger, LSScrollViewInsectType){
     LSScrollViewInsectTypeNone      = 0,

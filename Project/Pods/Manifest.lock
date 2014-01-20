@@ -1,0 +1,14 @@
+PODS:
+  - LSSwipeToDeleteCollectionViewController (0.1.1)
+
+DEPENDENCIES:
+  - LSSwipeToDeleteCollectionViewController (from `../`)
+
+EXTERNAL SOURCES:
+  LSSwipeToDeleteCollectionViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LSSwipeToDeleteCollectionViewController: 79d131aa55a0765c55158ca59365f90e9a5fdbcd
+
+COCOAPODS: 0.29.0

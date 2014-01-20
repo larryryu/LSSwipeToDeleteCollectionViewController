@@ -23,9 +23,8 @@
 		4619A4D818863CF000F0F1B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4619A4D618863CF000F0F1B3 /* InfoPlist.strings */; };
 		4619A4DA18863CF000F0F1B3 /* SwipeToDeleteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4619A4D918863CF000F0F1B3 /* SwipeToDeleteTests.m */; };
 		4619A4E518863D4900F0F1B3 /* LSBottomCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4619A4E418863D4900F0F1B3 /* LSBottomCollectionViewController.m */; };
-		4619A4E81886411300F0F1B3 /* LSSwipeToDeleteCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4619A4E71886411300F0F1B3 /* LSSwipeToDeleteCollectionViewController.m */; };
-		4619A4EB18864F3600F0F1B3 /* LSScrollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4619A4EA18864F3600F0F1B3 /* LSScrollViewCell.m */; };
 		4619A4EE188A225000F0F1B3 /* LSTopCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4619A4ED188A225000F0F1B3 /* LSTopCollectionViewController.m */; };
+		8B0ADC6B66ED47E2948FC6F2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B7260C0C25B2492E84C98D67 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05AD6E34C16E404092C87CE1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		4619A4A818863CF000F0F1B3 /* LSSwipeToDeleteCollectionViewControllerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSSwipeToDeleteCollectionViewControllerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4619A4AB18863CF000F0F1B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4619A4AD18863CF000F0F1B3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,12 +61,9 @@
 		4619A4D918863CF000F0F1B3 /* SwipeToDeleteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeToDeleteTests.m; sourceTree = "<group>"; };
 		4619A4E318863D4900F0F1B3 /* LSBottomCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBottomCollectionViewController.h; sourceTree = "<group>"; };
 		4619A4E418863D4900F0F1B3 /* LSBottomCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSBottomCollectionViewController.m; sourceTree = "<group>"; };
-		4619A4E61886411300F0F1B3 /* LSSwipeToDeleteCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSSwipeToDeleteCollectionViewController.h; sourceTree = "<group>"; };
-		4619A4E71886411300F0F1B3 /* LSSwipeToDeleteCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSSwipeToDeleteCollectionViewController.m; sourceTree = "<group>"; };
-		4619A4E918864F3600F0F1B3 /* LSScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSScrollViewCell.h; path = ../../LSSwipeToDeleteCollectionViewController/LSScrollViewCell.h; sourceTree = "<group>"; };
-		4619A4EA18864F3600F0F1B3 /* LSScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSScrollViewCell.m; path = ../../LSSwipeToDeleteCollectionViewController/LSScrollViewCell.m; sourceTree = "<group>"; };
 		4619A4EC188A225000F0F1B3 /* LSTopCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTopCollectionViewController.h; sourceTree = "<group>"; };
 		4619A4ED188A225000F0F1B3 /* LSTopCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTopCollectionViewController.m; sourceTree = "<group>"; };
+		B7260C0C25B2492E84C98D67 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +74,7 @@
 				4619A4AE18863CF000F0F1B3 /* CoreGraphics.framework in Frameworks */,
 				4619A4B018863CF000F0F1B3 /* UIKit.framework in Frameworks */,
 				4619A4AC18863CF000F0F1B3 /* Foundation.framework in Frameworks */,
+				8B0ADC6B66ED47E2948FC6F2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +98,7 @@
 				4619A4D318863CF000F0F1B3 /* SwipeToDeleteTests */,
 				4619A4AA18863CF000F0F1B3 /* Frameworks */,
 				4619A4A918863CF000F0F1B3 /* Products */,
+				05AD6E34C16E404092C87CE1 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +118,7 @@
 				4619A4AD18863CF000F0F1B3 /* CoreGraphics.framework */,
 				4619A4AF18863CF000F0F1B3 /* UIKit.framework */,
 				4619A4CD18863CF000F0F1B3 /* XCTest.framework */,
+				B7260C0C25B2492E84C98D67 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,7 +130,6 @@
 				4619A4BB18863CF000F0F1B3 /* LSAppDelegate.m */,
 				4619A4EF188A29D500F0F1B3 /* Storyboard */,
 				4619A4F1188A29EE00F0F1B3 /* Controllers */,
-				4619A4F2188A29FE00F0F1B3 /* 3rd Party */,
 				4619A4C618863CF000F0F1B3 /* Images.xcassets */,
 				4619A4B218863CF000F0F1B3 /* Supporting Files */,
 			);
@@ -175,16 +174,6 @@
 			name = Storyboard;
 			sourceTree = "<group>";
 		};
-		4619A4F0188A29E200F0F1B3 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				4619A4E918864F3600F0F1B3 /* LSScrollViewCell.h */,
-				4619A4EA18864F3600F0F1B3 /* LSScrollViewCell.m */,
-			);
-			name = Views;
-			path = ../Project/LSSwipeToDeleteCollectionViewController;
-			sourceTree = "<group>";
-		};
 		4619A4F1188A29EE00F0F1B3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,25 +187,6 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		4619A4F2188A29FE00F0F1B3 /* 3rd Party */ = {
-			isa = PBXGroup;
-			children = (
-				46292C3F188CFEB0008A7B53 /* Controller */,
-				4619A4F0188A29E200F0F1B3 /* Views */,
-			);
-			name = "3rd Party";
-			path = ../../LSSwipeToDeleteCollectionViewController;
-			sourceTree = "<group>";
-		};
-		46292C3F188CFEB0008A7B53 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				4619A4E61886411300F0F1B3 /* LSSwipeToDeleteCollectionViewController.h */,
-				4619A4E71886411300F0F1B3 /* LSSwipeToDeleteCollectionViewController.m */,
-			);
-			name = Controller;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4619A4DD18863CF000F0F1B3 /* Build configuration list for PBXNativeTarget "LSSwipeToDeleteCollectionViewControllerSample" */;
 			buildPhases = (
+				A5E43F532B3043F2B4606937 /* Check Pods Manifest.lock */,
 				4619A4A418863CF000F0F1B3 /* Sources */,
 				4619A4A518863CF000F0F1B3 /* Frameworks */,
 				4619A4A618863CF000F0F1B3 /* Resources */,
+				A7CF2C65369740BAA0216E0D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -311,6 +283,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A5E43F532B3043F2B4606937 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A7CF2C65369740BAA0216E0D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4619A4A418863CF000F0F1B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -320,8 +325,6 @@
 				4619A4E518863D4900F0F1B3 /* LSBottomCollectionViewController.m in Sources */,
 				4619A4B818863CF000F0F1B3 /* main.m in Sources */,
 				4619A4BC18863CF000F0F1B3 /* LSAppDelegate.m in Sources */,
-				4619A4E81886411300F0F1B3 /* LSSwipeToDeleteCollectionViewController.m in Sources */,
-				4619A4EB18864F3600F0F1B3 /* LSScrollViewCell.m in Sources */,
 				4619A4C518863CF000F0F1B3 /* LSRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +459,7 @@
 		};
 		4619A4DE18863CF000F0F1B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05AD6E34C16E404092C87CE1 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -469,6 +473,7 @@
 		};
 		4619A4DF18863CF000F0F1B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05AD6E34C16E404092C87CE1 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

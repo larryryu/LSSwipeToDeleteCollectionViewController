@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Lukman Sanusi. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "LSSwipeToDeleteCollectionViewController.h"
 
 NSString *const LSSwipeToDeleteCollectionViewControllerCellIdentifier = @"LSSwipeToDeleteCollectionViewControllerCell";
