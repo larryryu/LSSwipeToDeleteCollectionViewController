@@ -63,8 +63,8 @@
 		4619A4E418863D4900F0F1B3 /* LSBottomCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSBottomCollectionViewController.m; sourceTree = "<group>"; };
 		4619A4E61886411300F0F1B3 /* LSSwipeToDeleteCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSSwipeToDeleteCollectionViewController.h; sourceTree = "<group>"; };
 		4619A4E71886411300F0F1B3 /* LSSwipeToDeleteCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSSwipeToDeleteCollectionViewController.m; sourceTree = "<group>"; };
-		4619A4E918864F3600F0F1B3 /* LSScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSScrollViewCell.h; sourceTree = "<group>"; };
-		4619A4EA18864F3600F0F1B3 /* LSScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSScrollViewCell.m; sourceTree = "<group>"; };
+		4619A4E918864F3600F0F1B3 /* LSScrollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LSScrollViewCell.h; path = ../../LSSwipeToDeleteCollectionViewController/LSScrollViewCell.h; sourceTree = "<group>"; };
+		4619A4EA18864F3600F0F1B3 /* LSScrollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LSScrollViewCell.m; path = ../../LSSwipeToDeleteCollectionViewController/LSScrollViewCell.m; sourceTree = "<group>"; };
 		4619A4EC188A225000F0F1B3 /* LSTopCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTopCollectionViewController.h; sourceTree = "<group>"; };
 		4619A4ED188A225000F0F1B3 /* LSTopCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTopCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,7 +130,6 @@
 				4619A4BB18863CF000F0F1B3 /* LSAppDelegate.m */,
 				4619A4EF188A29D500F0F1B3 /* Storyboard */,
 				4619A4F1188A29EE00F0F1B3 /* Controllers */,
-				4619A4F0188A29E200F0F1B3 /* Views */,
 				4619A4F2188A29FE00F0F1B3 /* 3rd Party */,
 				4619A4C618863CF000F0F1B3 /* Images.xcassets */,
 				4619A4B218863CF000F0F1B3 /* Supporting Files */,
@@ -183,6 +182,7 @@
 				4619A4EA18864F3600F0F1B3 /* LSScrollViewCell.m */,
 			);
 			name = Views;
+			path = ../Project/LSSwipeToDeleteCollectionViewController;
 			sourceTree = "<group>";
 		};
 		4619A4F1188A29EE00F0F1B3 /* Controllers */ = {
@@ -201,11 +201,20 @@
 		4619A4F2188A29FE00F0F1B3 /* 3rd Party */ = {
 			isa = PBXGroup;
 			children = (
-				4619A4E61886411300F0F1B3 /* LSSwipeToDeleteCollectionViewController.h */,
-				4619A4E71886411300F0F1B3 /* LSSwipeToDeleteCollectionViewController.m */,
+				46292C3F188CFEB0008A7B53 /* Controller */,
+				4619A4F0188A29E200F0F1B3 /* Views */,
 			);
 			name = "3rd Party";
 			path = ../../LSSwipeToDeleteCollectionViewController;
+			sourceTree = "<group>";
+		};
+		46292C3F188CFEB0008A7B53 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4619A4E61886411300F0F1B3 /* LSSwipeToDeleteCollectionViewController.h */,
+				4619A4E71886411300F0F1B3 /* LSSwipeToDeleteCollectionViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
