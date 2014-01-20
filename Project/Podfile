@@ -1,0 +1,7 @@
+pod "LSSwipeToDeleteCollectionViewController", :path => "../LSSwipeToDeleteCollectionViewController.podspec"
+
+target "Demo" do
+end
+
+target "DemoTests" do
+end
