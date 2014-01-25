@@ -1,7 +1,12 @@
 # LSSwipeToDeleteCollectionViewController
 
-[![Version](http://cocoapod-badges.herokuapp.com/v/LSSwipeToDeleteCollectionViewController/badge.png)](http://cocoadocs.org/docsets/LSSwipeToDeleteCollectionViewController)
-[![Platform](http://cocoapod-badges.herokuapp.com/p/LSSwipeToDeleteCollectionViewController/badge.png)](http://cocoadocs.org/docsets/LSSwipeToDeleteCollectionViewController)
+## Screenshots
+
+<!-- Github -->
+<img src="https://raw.github.com/larryryu/LSSwipeToDeleteCollectionViewController/master/Screenshots/Dragging.png" alt="Dragging" height="960" width="640" />
+
+<!-- Local -->
+<!-- <img src="Screenshots/Dragging.png" alt="Dragging" height="960" width="640" /> -->
 
 ## Usage
 
