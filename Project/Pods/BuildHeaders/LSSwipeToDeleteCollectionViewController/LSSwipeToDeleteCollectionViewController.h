@@ -1,1 +1,1 @@
-../../../../LSSwipeToDeleteCollectionViewController/LSSwipeToDeleteCollectionViewController.h
+../../LSSwipeToDeleteCollectionViewController/LSSwipeToDeleteCollectionViewController/LSSwipeToDeleteCollectionViewController.h
