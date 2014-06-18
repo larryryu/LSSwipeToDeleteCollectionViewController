@@ -86,23 +86,24 @@
     [self.scrollView setContentOffset:CGPointZero animated:animate];
 }
 
--(void)scrollToEdge{
-    CGPoint point = [self edgePoint];
+
+-(void)scrollToEdgeInDirection:(LSSwipeToDeleteDirection)direction{
+    CGPoint point = [self edgePointInDirection:direction];
     [self.scrollView setContentOffset:point animated:NO];
 }
 
--(CGPoint)edgePoint{
+-(CGPoint)edgePointInDirection:(LSSwipeToDeleteDirection)direction{
     CGPoint point = self.scrollView.bounds.origin;
-    if (self.insectType & LSScrollViewInsectTypeTop) {
+    if (self.insectType & LSScrollViewInsectTypeTop && direction == LSSwipeToDeleteDirectionMax) {
         point.y = -self.scrollView.contentInset.top;
     }
-    if (self.insectType & LSScrollViewInsectTypeLeft) {
+    if (self.insectType & LSScrollViewInsectTypeLeft && direction == LSSwipeToDeleteDirectionMax) {
         point.x = -self.scrollView.contentInset.left;
     }
-    if (self.insectType & LSScrollViewInsectTypeBottom) {
+    if (self.insectType & LSScrollViewInsectTypeBottom && direction == LSSwipeToDeleteDirectionMin) {
         point.y = self.scrollView.contentInset.bottom;
     }
-    if (self.insectType & LSScrollViewInsectTypeRight) {
+    if (self.insectType & LSScrollViewInsectTypeRight && direction == LSSwipeToDeleteDirectionMin) {
         point.x = self.scrollView.contentInset.right;
     }
     return point;
@@ -127,7 +128,7 @@
     if (self.insectType & LSScrollViewInsectTypeRight) {
         right = CGRectGetMaxX(self.frame);
     }
-
+    
     [self.scrollView setContentInset:UIEdgeInsetsMake(top, left, bottom, right)];
     [self.scrollView setContentOffset:CGPointZero];
 }

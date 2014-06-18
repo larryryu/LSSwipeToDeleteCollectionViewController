@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LSSwipeToDeleteCollectionViewControllerKit.h"
 
 typedef NS_OPTIONS(NSInteger, LSScrollViewInsectType){
     LSScrollViewInsectTypeNone      = 0,
@@ -24,8 +25,8 @@ typedef NS_OPTIONS(NSInteger, LSScrollViewInsectType){
 @property (nonatomic, assign) id<LSScrollViewCellDelegate>scrollViewDelegate;
 - (void)adjustScrollViewInsectsInSuperView:(UIView *)superview;
 - (void)resetScrollViewAnimated:(BOOL)animate;
-- (void)scrollToEdge;
-- (CGPoint) edgePoint;
+- (void)scrollToEdgeInDirection:(LSSwipeToDeleteDirection)direction;
+- (CGPoint)edgePointInDirection:(LSSwipeToDeleteDirection)direction;
 @end
 
 @protocol LSScrollViewCellDelegate <NSObject>

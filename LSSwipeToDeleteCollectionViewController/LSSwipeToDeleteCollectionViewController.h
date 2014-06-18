@@ -27,16 +27,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LSScrollViewCell.h"
+#import "LSSwipeToDeleteCollectionViewControllerKit.h"
 
 static const CGFloat LSSwipeToDeleteCollectionViewControllerDefaultDeletionDistanceTresholdValue = 100.0f;
 static const CGFloat LSSwipeToDeleteCollectionViewControllerDefaultDeletionVelocityTresholdValue = 1.0f;
-
-typedef NS_ENUM(NSInteger, LSSwipeToDeleteDirection){
-    LSSwipeToDeleteDirectionNone    =   1 << 0,      // prevents deletion
-    LSSwipeToDeleteDirectionMin     =   1 << 1, // Causes deletion animation toward the CollectionView's bounds minX or minY
-    LSSwipeToDeleteDirectionMax     =   1 << 2  // Causes deletion animation toward the CollectionView's bounds maxX or maxY
-};
 
 @class LSSwipeToDeleteCollectionViewController;
 @protocol LSSwipeToDeleteCollectionViewControllerDelegate <NSObject>

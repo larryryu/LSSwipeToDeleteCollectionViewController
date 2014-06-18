@@ -89,17 +89,17 @@ NSString *const LSSwipeToDeleteCollectionViewControllerCellIdentifier = @"LSSwip
     }
     
     if (self.swipeToDeleteCollectionViewLayout.scrollDirection == UICollectionViewScrollDirectionVertical) {
-        if (self.swipeToDeleteDirection == LSSwipeToDeleteDirectionMin) {
+        if (self.swipeToDeleteDirection & LSSwipeToDeleteDirectionMin) {
             insectType |= LSScrollViewInsectTypeRight;
         }
-        if (self.swipeToDeleteDirection == LSSwipeToDeleteDirectionMax){
+        if (self.swipeToDeleteDirection & LSSwipeToDeleteDirectionMax){
             insectType |= LSScrollViewInsectTypeLeft;
         }
     }else if (self.swipeToDeleteCollectionViewLayout.scrollDirection == UICollectionViewScrollDirectionHorizontal){
-        if (self.swipeToDeleteDirection == LSSwipeToDeleteDirectionMin) {
+        if (self.swipeToDeleteDirection & LSSwipeToDeleteDirectionMin) {
             insectType |= LSScrollViewInsectTypeBottom;
         }
-        if (self.swipeToDeleteDirection == LSSwipeToDeleteDirectionMax){
+        if (self.swipeToDeleteDirection & LSSwipeToDeleteDirectionMax){
             insectType |= LSScrollViewInsectTypeTop;
         }
     }
@@ -127,7 +127,7 @@ NSString *const LSSwipeToDeleteCollectionViewControllerCellIdentifier = @"LSSwip
     *targetContentOffset = scrollView.contentOffset;
     
     if (shouldDelete) {
-        [self performSwipeToDeleteForCellsAtIndexPaths:@[selectedIndexPath] withCompletion:completionBlock];
+        [self performSwipeToDeleteForCellsAtIndexPaths:@[selectedIndexPath] inDirection:userTriggerredSwipeToDeleteDirection withCompletion:completionBlock];
     }else{
         [self cancelSwipeToDeleteForCellsAtIndexPaths:@[selectedIndexPath] withCompletion:completionBlock];
     }
@@ -139,12 +139,12 @@ NSString *const LSSwipeToDeleteCollectionViewControllerCellIdentifier = @"LSSwip
     [cell adjustScrollViewInsectsInSuperView:scrollView];
 }
 
--(void)performSwipeToDeleteForCellsAtIndexPaths:(NSArray *)indexPathsToDelete withCompletion:(void (^)(BOOL finished))completionBlock{
+-(void)performSwipeToDeleteForCellsAtIndexPaths:(NSArray *)indexPathsToDelete inDirection:(LSSwipeToDeleteDirection)direction withCompletion:(void (^)(BOOL finished))completionBlock{
     dispatch_async(dispatch_get_main_queue(), ^{
         [UIView animateWithDuration:0.4 delay:0.0 options:(UIViewAnimationOptionCurveEaseOut) animations:^{
             [indexPathsToDelete enumerateObjectsUsingBlock:^(NSIndexPath *indexPath, NSUInteger idx, BOOL *stop) {
                 LSScrollViewCell *cell = (LSScrollViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
-                [cell scrollToEdge];
+                [cell scrollToEdgeInDirection:direction];
                 
             }];
         } completion:^(BOOL finished) {

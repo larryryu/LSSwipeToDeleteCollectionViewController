@@ -50,6 +50,7 @@
     [self.collectionView setShowsVerticalScrollIndicator:NO];
     [self.collectionView setClipsToBounds:NO];
     [self resetColors];
+    self.swipeToDeleteDirection = LSSwipeToDeleteDirectionMin|LSSwipeToDeleteDirectionMax;
 }
 
 -(void)resetColors{
