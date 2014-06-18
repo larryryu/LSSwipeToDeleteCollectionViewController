@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9BFC8B0DE232488587C35223"
+               BlueprintIdentifier = "F9015BCC0F4D4138A21BB71D"
                BuildableName = "libPods-LSSwipeToDeleteCollectionViewController.a"
                BlueprintName = "Pods-LSSwipeToDeleteCollectionViewController"
                ReferencedContainer = "container:Pods.xcodeproj">
